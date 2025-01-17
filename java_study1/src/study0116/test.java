@@ -25,6 +25,12 @@ public class test {
 		age = 27;
 		age = '가'; //자바에서 '' 표현은 문자를 의미
 					// "" 표현은 문자열을 의미
+		
+		String name="홍길동"; // 문자열은 String 클래스타입 사용
+		
+		boolean isApple = true; // 참, 거짓 값을 가지는 타입
+		
+		System.out.println( isApple );
 	}
 
 }
