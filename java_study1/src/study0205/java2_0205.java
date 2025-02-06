@@ -93,22 +93,28 @@ public class java2_0205 {
 		// 1 ~ 50 중 하나를 내가 입력한다.
 		// 내가 입력한 숫자를 컴퓨터가 맞춰야 한다. (random 사용)
 		// 무작위로 맞추는게 아니고 범위를 좁히면서 맞출수 있도록 해야한다.
+
+		System.out.print("정수 입력 : ");	
+		int num = scan.nextInt();
 		
-//		System.out.print("정수 입력 : ");	
-//		int num = scan.nextInt();
-//		
-//		while(true) {
-//			int com = (int)(Math.random() * 50 + 1);			
-//			if( com == num) {
-//				System.out.println("정답!");
-//				break;
-//			}
-//			if( com > num) 
-//				System.out.println("up");
+		while(true) {
+			int com = (int)(Math.random() * 50 + 1);			
+			if( com == num) {
+				System.out.println("정답!");
+				break;
+			}
+			if( com > num)
+				System.out.println(com+" 숫자를 낮추세요");
+				for( com = com; com <= 50;  )
+					System.out.println(com-(com - num));
+////			else if(com > num)
+//				System.out.println(com - (com - num)) ;
 //			if( com < num) 
-//				System.out.println("down");
-//			}
-
+//				System.out.println(com+" 숫자를 높이세요");
+////			else if(com < num)
+////				for( com = com; com <= com + (num - com); com++)
+////					System.out.println(com);
+//					System.out.println(com + (num - com));
+			}
+		}
 	}
-
-}
