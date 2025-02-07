@@ -8,13 +8,13 @@ public class java2_0206 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int user = 0;
-		do{
-			System.out.print("1.가위 2.바위 3.보 : ");
-			user = sc.nextInt();
-//			if(user >= 1 && user <= 3) break;
-		}while( !(user >= 1 && user <= 3));
-		System.out.println("가위바위보 진행");
+//		int user = 0;
+//		do{
+//			System.out.print("1.가위 2.바위 3.보 : ");
+//			user = sc.nextInt();
+////			if(user >= 1 && user <= 3) break;
+//		}while( !(user >= 1 && user <= 3));
+//		System.out.println("가위바위보 진행");
 		
 		
 //		int a = 100;
@@ -28,16 +28,16 @@ public class java2_0206 {
 		
 //		int i = 1;
 //		int k = 1;
-//		while( i <= 3) {
-//			while(k <= 2) {
-//				System.out.println("i = "+i+"   k = " +k);
-//				k++;
-//			}
-//			k = 1;
-//			i++;
-//		}
-		
-		
+////		while( i <= 3) {
+////			while(k <= 2) {
+////				System.out.println("i = "+i+"   k = " +k);
+////				k++;
+////			}
+////			k = 1;
+////			i++;
+////		}
+//		
+//		
 //		for(int i = 1; i <= 3; i++) {
 //			for(int k = 1; k <= 2; k++) {
 //				System.out.println("i = "+i+"  k = "+k);

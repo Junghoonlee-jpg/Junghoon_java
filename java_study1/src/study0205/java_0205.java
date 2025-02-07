@@ -9,20 +9,20 @@ public class java_0205 {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		
-		int i = 1;
-		for(int k = 2; k <= 9;) {
-			System.out.println(k + "*" + i + "=" + (k*i));
-			i++;
-			if( i == 10) {
-				k++;
-				i=1;
-			}
-		}
-//		for(int k = 2; k<=9; k++) {
-//			for(int i = 1; i<=9; i++) {
-//				System.out.println( k + "*" + i + "=" + (k*i));
+//		int i = 1;
+//		for(int k = 2; k <= 9;) {
+//			System.out.println(k + "*" + i + "=" + (k*i));
+//			i++;
+//			if( i == 10) {
+//				k++;
+//				i=1;
 //			}
 //		}
+		for(int k = 2; k<=9; k++) {
+			for(int i = 1; i<=9; i++) {
+				System.out.println( k + "*" + i + "=" + (k*i));
+			}
+		}
 		
 		
 		
