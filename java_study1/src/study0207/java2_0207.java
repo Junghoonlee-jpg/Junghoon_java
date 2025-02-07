@@ -126,7 +126,7 @@ public class java2_0207 {
 //		  	숫자만 맞으면 볼
 //		  	숫자가 아예 없으면 아웃
 //		  	3스트라이크면 3가지숫자랑 자리가 다 맞는것임
-		System.out.print("숫자 입력 : ");
+		System.out.println("숫자 3개 입력 : ");
 		int nom = sc.nextInt();
 		int com = (int)(Math.random()*3+1);
 		
