@@ -145,6 +145,17 @@ public class java3_0210 {
 		// 랜덤 숫자 중에서 짝수 15개를 배열에 저장
 		// 15개 전부 저장 되면 배열을 출력하시오
 		// 숫자 중복 상관 없음
+		
+		
+//		int[] num = new int[] {10,20,30,40,50,60,70,80,90,100};
+//		
+//		for(int a : num) {
+//			System.out.println(a);
+//		}
+		
+//		for(int i = 0; i<num.length; i++) {
+//			System.out.println(num[i]);
+//		}
 				
 	}
 					
