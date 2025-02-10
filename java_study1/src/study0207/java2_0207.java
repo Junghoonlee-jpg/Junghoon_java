@@ -100,14 +100,17 @@ public class java2_0207 {
 //	  	알파벳 (대문자 또는 소문자 모두 가능하게) 입력
 //	  	입력한 알파벳이 몇번째 알파벳인지 찾기 - 반드시 for문으로
 		
-		Scanner sc = new Scanner(System.in);
-//		System.out.print("알파벳 입력 : ");
-//		int nom = sc.nextInt();
-//		
-//		
-//		for(nom = 1; nom <= 26; ) {
-//			
-//		}
+		Scanner scan = new Scanner(System.in);
+		System.out.print("알파벳 입력 : ");
+		char alp = scan.nextLine().charAt(0);
+		// 아스키 코드에서 A 0 65(10진수), a - 97(10진수)		
+		for(int i = 1; i <= 26; i++) {
+			if(alp == (i+64) || alp == (i+96)) {
+				System.out.printf("알파벳 %c 는 %d 알파벳 \n", alp, i);
+				break;
+			}
+		}
+		
 		
 		
 //		과제
@@ -126,17 +129,17 @@ public class java2_0207 {
 //		  	숫자만 맞으면 볼
 //		  	숫자가 아예 없으면 아웃
 //		  	3스트라이크면 3가지숫자랑 자리가 다 맞는것임
-		System.out.println("숫자 3개 입력 : ");
-		int nom = sc.nextInt();
-		int com = (int)(Math.random()*3+1);
-		
-		for(int a = 1; a <= 9; a++) {
-			for(int b = 1; b <= 9; b++) {
-				for(int c = 1; c <= 9; c++) {
-					
-				}
-			}
-		}
+//		System.out.println("숫자 3개 입력 : ");
+//		int nom = sc.nextInt();
+//		int com = (int)(Math.random()*3+1);
+//		
+//		for(int a = 1; a <= 9; a++) {
+//			for(int b = 1; b <= 9; b++) {
+//				for(int c = 1; c <= 9; c++) {
+//					
+//				}
+//			}
+//		}
 		
 		
 	}
