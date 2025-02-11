@@ -67,12 +67,12 @@ public class java2_0207 {
 		
 		//문제5
 		
-//		for(int line = 0; line <= 2; line++ ) {
-//			for(int nom = line*4; nom <= (line*4)+3; nom++) {
-//				System.out.print(nom + "  ");
-//			}
-//			System.out.println();
-//		}
+		for(int line = 0; line <= 2; line++ ) {
+			for(int nom = line*4; nom <= (line*4)+3; nom++) {
+				System.out.print(nom + "  ");
+			}
+			System.out.println();
+		}
 		
 		//문제6
 //		for(int a = 1; a <= 9; a++) {
@@ -100,16 +100,16 @@ public class java2_0207 {
 //	  	알파벳 (대문자 또는 소문자 모두 가능하게) 입력
 //	  	입력한 알파벳이 몇번째 알파벳인지 찾기 - 반드시 for문으로
 		
-		Scanner scan = new Scanner(System.in);
-		System.out.print("알파벳 입력 : ");
-		char alp = scan.nextLine().charAt(0);
-		// 아스키 코드에서 A 0 65(10진수), a - 97(10진수)		
-		for(int i = 1; i <= 26; i++) {
-			if(alp == (i+64) || alp == (i+96)) {
-				System.out.printf("알파벳 %c 는 %d 알파벳 \n", alp, i);
-				break;
-			}
-		}
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("알파벳 입력 : ");
+//		char alp = scan.nextLine().charAt(0);
+//		// 아스키 코드에서 A 0 65(10진수), a - 97(10진수)		
+//		for(int i = 1; i <= 26; i++) {
+//			if(alp == (i+64) || alp == (i+96)) {
+//				System.out.printf("알파벳 %c 는 %d 알파벳 \n", alp, i);
+//				break;
+//			}
+//		}
 		
 		
 		
