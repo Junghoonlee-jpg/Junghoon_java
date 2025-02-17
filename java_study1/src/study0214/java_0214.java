@@ -5,6 +5,15 @@ import java.util.Scanner;
 public class java_0214 {
 
 	public static void main(String[] args) {
+		
+		// 과제(금요일까지)
+				// 빙고게임은 5줄 빙고되면 종료
+				// 가로 세로 대각선 빙고로 취급
+				// 힌트는 인덱스 규칙(i와k활용)
+				// 중복으로 숫자 안들어가도록 변경
+
+				// 시간이 된다면 컴퓨터와 같이 빙고하도록 출력
+//				(컴퓨터의 숫자 선택도 사람처럼 빙고를 빠르게 할 수 있도록 숫자 선택)
 
 		Scanner scan = new Scanner(System.in);		
 
@@ -15,13 +24,13 @@ public class java_0214 {
 			game[i] = (int)(Math.random()*50+1);
 			for(int j = 0; j < i; j++) {
 				if(game[i] == game[j]) {
-					i--;    
+					i--; break;
 				}
 				
 			}
 //			System.out.println(Arrays.toString(game));
 		}
-		int bingo = 0;
+		
 		// 5줄 5칸 출력
 
 		while(true) {			
@@ -45,16 +54,34 @@ public class java_0214 {
 //				System.out.printf("%d빙고", bingo);
 				}					
 			}
-
-		// 과제(금요일까지)
-		// 빙고게임은 5줄 빙고되면 종료
-		// 가로 세로 대각선 빙고로 취급
-		// 힌트는 인덱스 규칙(i와k활용)
-		// 중복으로 숫자 안들어가도록 변경
-
-		// 시간이 된다면 컴퓨터와 같이 빙고하도록 출력
-//		(컴퓨터의 숫자 선택도 사람처럼 빙고를 빠르게 할 수 있도록 숫자 선택)
-		} 
+		
+		int bingo = 0;
+		int 가로 =0, 세로=0, 대각선1=0, 대각선2=0;
+		
+		for(int i = 0; i < 5; i++) {
+			for(int k = 0; k < 5; k++) {
+				if(game[i*5+k] == 0) 가로++;
+				if(game[k*5+1] == 0) 세로++;
+			}
+			if(game[i*6] == 0) 대각선1++;
+			if(game[i*4+4] == 0) 대각선2++;
+			
+			if(대각선2 == 5) bingo++; // 대각선 빙고 확인
+			if(대각선1 == 5) bingo++; // 대각선 빙고 확인
+			if(가로==5) bingo++; // 가로방향 빙고확인
+			if(세로 == 5) bingo++; // 세로 방향 빙고 확인
+			
+			가로=0;
+			세로=0;
+		}
+		
+		
+		if(bingo == 5) { 
+			System.out.println("5줄 빙고 끝!");
+			break;
+		}
+		
+		} // while 무한루프 종료
 
 	}
 

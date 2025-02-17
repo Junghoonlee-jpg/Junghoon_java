@@ -55,21 +55,21 @@ public class java3_0214 {
 	            "strawberry", "dragonfruit", "lime", "pear", "peach"
 		};
 		
-//		Scanner sc = new Scanner(System.in);
-//		
-//		System.out.print("알파벳 입력 : ");
-//		char alp = sc.nextLine().toLowerCase().charAt(0);
-//		
-//		// 알파벳을 무조건 소문자로 변환		
-//		
-//		int total = 0;
-//		
-//		for(String str : word) {
-//			if(str.charAt(0) == alp) {
-//				System.out.println(str); total++;
-//			}
-//		}
-//		System.out.println("총 단어 갯수 : " +total);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("알파벳 입력 : ");
+		char alp = sc.nextLine().toLowerCase().charAt(0);
+		
+		// 알파벳을 무조건 소문자로 변환		
+		
+		int total = 0;
+		
+		for(String str : word) {
+			if(str.charAt(0) == alp) {
+				System.out.println(str); total++;
+			}
+		}
+		System.out.println("총 단어 갯수 : " +total);
 		
 		// 문제3.
 		/*
@@ -85,7 +85,12 @@ public class java3_0214 {
 		 * 몇번째 좌석에 예약이 되었는지 출력
 		 */
 			
-		
+//		int 총좌석[] = new int[96];
+//		for(int i = 0; i<8; i++) {
+//			for(int j = 0; j < 12; j++ ) {
+//				
+//			}
+//		}
 	}
 
 }
