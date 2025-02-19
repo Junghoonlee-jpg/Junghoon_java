@@ -36,9 +36,40 @@ public class ClassArray {
 		
 //		ab(); // 함수호출 및 메서드 호출
 
-		Member info = new Member();
+		
+//		Movie movie = new Movie();
+//		movie.title = "하얼빈";
+//		movie.genre = "드라마";
+//		movie.people = 490;
+//		movie.year = 2024;
+//		
+//		System.out.println("제목 : " + movie.title + "," + " 장르 : " + movie.genre + "," + " 관객수 : " + movie.people +","+ " 개봉년도 : " + movie.year);
+		
+//		Member info = new Member();
+//		System.out.println(info);
+//		System.out.println(info.name);
+//		
+//		Member m1 = new Member();
+//		System.out.println(m1.name);
+		
+		Member info = new Member(20, "군인", "김유신");
+		
+		System.out.println(info.job);
+		
+		
+		
+				
 		
 		
 	}
 
 }
+
+/*
+ * 영화제목, 장르, 관객수, 개봉년도
+ * 
+ * 위 항목의 데이터를 저장할 수 있는 클래스 정의 
+ * 영화 한편에 대한 데이터 입력하고 출력까지
+ */
+
+
