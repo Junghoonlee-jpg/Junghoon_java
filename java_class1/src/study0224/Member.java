@@ -38,14 +38,14 @@ public class Member {
 	//인스턴스 메서드
 	void setName(String name) {
 		this.name = name;
-		output(); // 클래스 메서드 호출 가능
+//		output(); // 클래스 메서드 호출 가능
 	}
 	
 	// 클래스 메서드
-	static void output() {
-		setName("이순신"); // 인스턴스 메서드 호출 불가
-		System.out.println(name); // 인스턴스 변수 사용불가
-	}
+//	static void output() {
+//		setName("이순신"); // 인스턴스 메서드 호출 불가
+//		System.out.println(name); // 인스턴스 변수 사용불가
+//	}
 }
 
 /*
